@@ -1,0 +1,27 @@
+:root{
+    --main-black: #090302;
+    --text-white: #FBFBFF;
+}
+
+body{
+    margin: 0;
+    font-family: "Red Hat Display";
+    font-weight: normal;
+}
+.container{
+    color: var(--text-white);
+    background-color: var(--main-black);
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.main-nav{
+    display: flex;
+    gap: 10px;
+}
+.main-nav.nav-item{
+
+}
