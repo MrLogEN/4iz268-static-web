@@ -2,29 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Vilém Charwot - Home</title>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Red+Hat+Display' rel='stylesheet'>
 </head>
 <body>
-<div class="container">
-    <header class="main-header">
-        <a class="logo" href="#">
-            <img src="#" alt="logo">
-        </a>
-        <nav class="main-nav">
-            <a class="nav-item" href="projects.html">Projects</a>
-            <a href="about.html" class="nav-item">About</a>
-            <a href="contact.html" class="nav-item">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <h1>
-            Home
-        </h1>
-    </main>
+<div class="main-container">
+    <!--Header-->
+    <div class="top-page-header-container">
+        <header class="top-page-header">
+            <div class="name-container">
+                <span class="name">Vilém Charwot</span>
+            </div>
+            <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 1.46957 0.210714 0.96086 0.585786 0.585787C0.960859 0.210714 1.46957 0 2 0H26C26.5304 0 27.0391 0.210714 27.4142 0.585787C27.7893 0.96086 28 1.46957 28 2C28 2.53043 27.7893 3.03914 27.4142 3.41421C27.0391 3.78929 26.5304 4 26 4H2C1.46957 4 0.960859 3.78929 0.585786 3.41421C0.210714 3.03914 0 2.53043 0 2ZM0 12C0 11.4696 0.210714 10.9609 0.585786 10.5858C0.960859 10.2107 1.46957 10 2 10H26C26.5304 10 27.0391 10.2107 27.4142 10.5858C27.7893 10.9609 28 11.4696 28 12C28 12.5304 27.7893 13.0391 27.4142 13.4142C27.0391 13.7893 26.5304 14 26 14H2C1.46957 14 0.960859 13.7893 0.585786 13.4142C0.210714 13.0391 0 12.5304 0 12ZM0 22C0 21.4696 0.210714 20.9609 0.585786 20.5858C0.960859 20.2107 1.46957 20 2 20H26C26.5304 20 27.0391 20.2107 27.4142 20.5858C27.7893 20.9609 28 21.4696 28 22C28 22.5304 27.7893 23.0391 27.4142 23.4142C27.0391 23.7893 26.5304 24 26 24H2C1.46957 24 0.960859 23.7893 0.585786 23.4142C0.210714 23.0391 0 22.5304 0 22Z" fill="#BDEDE0"/>
+            </svg>
+        </header>
+    </div>
+    <!--Intro section-->
+    <section class="intro-section">
+        <h1 class="intro-heading">Welcome to my portfolio</h1>
+        <p class="intro-text">Come take a stroll through my digital playground! I'm Vilém Charwot, an IT student at Prague University of Economics and Business, and I'm knee-deep in the world of development. Join me behind the scenes as I navigate the exciting twists and turns of code, creativity, and endless learning. If I caught your attantion, keep reading.</p>
+    </section>
+    <!--About me section-->
+    <section class="section-bright">
+        <!--Top wave-->
+        <svg class="top-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 50" fill="none">
+            <title>waveform top</title>
+            <path d="M0 16.0524L15.625 18.1205C31.25 20.2276 62.5 24.3637 93.75 21.7884C125 19.174 156.25 9.80917 187.5 4.81458C218.75 -0.219034 250 -0.843363 281.25 0.834507C312.5 2.51238 343.75 6.57048 359.375 8.56051L375 10.5896V50H359.375C343.75 50 312.5 50 281.25 50C250 50 218.75 50 187.5 50C156.25 50 125 50 93.75 50C62.5 50 31.25 50 15.625 50H0V16.0524Z" fill="#BDEDE0"/>
+        </svg>
+        <!--Content-->
+        <main class="section-bright-content">
+            <h2 class="section-heading">About me</h2>
+            <div class="text-image">
+                <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img class="section-image" src="pictures/matrixVildaEditCrop-min.png" alt="Vilém Charwot - Matrix">
+            </div>
+            <a class="arrow-button">
+                Details
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path d="M14.5 5L21.5 12M21.5 12L14.5 19M21.5 12H3.5" stroke="#202A32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </main>
+        <!--Bottom wave-->
+        <svg class="bottom-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 75" fill="none">
+            <path d="M0 56.4436L15.625 58.7386C31.25 60.9715 62.5 65.5614 93.75 69.1589C125 72.7564 156.25 75.4856 187.5 74.9274C218.75 74.4311 250 70.7096 281.25 67.9184C312.5 65.1273 343.75 63.2665 359.375 62.3361L375 61.4057V0H359.375C343.75 0 312.5 0 281.25 0C250 0 218.75 0 187.5 0C156.25 0 125 0 93.75 0C62.5 0 31.25 0 15.625 0H0V56.4436Z" fill="#BDEDE0"/>
+        </svg>
+    </section>
+    <section class="section-dark">
+        <!--Content-->
+        <main class="section-dark-content">
+            <h2 class="section-heading">My Work</h2>
+            <div class="text-image">
+                <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </main>
+        <!--Bottom wave-->
+    </section>
 </div>
-
 
 </body>
 </html>
