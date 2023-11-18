@@ -1,19 +1,17 @@
 function menuRoll(){
     const menu = document.getElementById("nav-menu");
-    const disp = menu.style.display;
-    if (disp === "none"){
-        menu.style.display = "flex";
-    }
-    else {
-        menu.style.display = "none";
-    }
-}
-window.onresize = (event)=>{
-    const menu = document.getElementById("nav-menu");
-    if (window.innerWidth > 900){
-        menu.style.display = "flex";
+    const burger = document.getElementById("burger-icon");
+    const cross = document.getElementById("cross-icon");
+    if (menu.style.maxHeight){
+        menu.style.maxHeight = null;
+        burger.style.display = "flex";
+        cross.style.display = "none";
+
     }
     else{
-        menu.style.display = "none";
+        menu.style.maxHeight = "148px";
+        burger.style.display = "none";
+        cross.style.display = "flex";
     }
+
 }
