@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vilém Charwot - Home</title>
     <link href='https://fonts.googleapis.com/css2?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="main-container">
+<div class="div-container">
     <!--Header-->
     <div class="top-page-header-container">
         <header class="top-page-header">
             <div class="name-container">
-                <span class="name">Vilém Charwot</span>
+                <a class="name" href="index.html">Vilém Charwot</a>
             </div>
             <button class="burger-menu" onclick="menuRoll()">
                 <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,44 +32,93 @@
     <!--Intro section-->
     <section class="intro-section">
         <h1 class="intro-heading">Welcome to my portfolio</h1>
-        <p class="intro-text">Come take a stroll through my digital playground! I'm Vilém Charwot, an IT student at Prague University of Economics and Business, and I'm knee-deep in the world of development. Join me behind the scenes as I navigate the exciting twists and turns of code, creativity, and endless learning. If I caught your attantion, keep reading.</p>
+        <p class="intro-text">Hi, I am Vilém Charwot, student of informatics and .NET enthusiast.</p>
     </section>
     <!--About me section-->
     <section class="section-bright">
         <!--Top wave-->
-        <svg class="top-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 50" fill="none">
+        <svg class="top-wave-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 50" fill="none">
             <title>waveform top</title>
-            <path d="M0 16.0524L15.625 18.1205C31.25 20.2276 62.5 24.3637 93.75 21.7884C125 19.174 156.25 9.80917 187.5 4.81458C218.75 -0.219034 250 -0.843363 281.25 0.834507C312.5 2.51238 343.75 6.57048 359.375 8.56051L375 10.5896V50H359.375C343.75 50 312.5 50 281.25 50C250 50 218.75 50 187.5 50C156.25 50 125 50 93.75 50C62.5 50 31.25 50 15.625 50H0V16.0524Z" fill="#BDEDE0"/>
+            <path class="top-wave" d="M0 16.0524L15.625 18.1205C31.25 20.2276 62.5 24.3637 93.75 21.7884C125 19.174 156.25 9.80917 187.5 4.81458C218.75 -0.219034 250 -0.843363 281.25 0.834507C312.5 2.51238 343.75 6.57048 359.375 8.56051L375 10.5896V50H359.375C343.75 50 312.5 50 281.25 50C250 50 218.75 50 187.5 50C156.25 50 125 50 93.75 50C62.5 50 31.25 50 15.625 50H0V16.0524Z" fill="#BDEDE0"/>
         </svg>
         <!--Content-->
-        <main class="section-bright-content">
+        <div class="section-bright-content">
             <h2 class="section-heading">About me</h2>
             <div class="text-image">
-                <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="section-text">Come take a stroll through my digital playground! I'm Vilém Charwot, an IT student at Prague University of Economics and Business, and I'm knee-deep in the world of development. Join me behind the scenes as I navigate the exciting twists and turns of code, creativity, and endless learning. If I caught your attantion, keep reading.</p>
                 <img class="section-image" src="pictures/matrixVildaEditCrop-min.png" alt="Vilém Charwot - Matrix">
             </div>
             <a class="arrow-button" href="projects.html">
-                Details
+                <header>
+                    More about me
+                </header>
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                     <path d="M14.5 5L21.5 12M21.5 12L14.5 19M21.5 12H3.5" stroke="#202A32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </a>
-        </main>
+        </div>
         <!--Bottom wave-->
-        <svg class="bottom-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 75" fill="none">
-            <path d="M0 56.4436L15.625 58.7386C31.25 60.9715 62.5 65.5614 93.75 69.1589C125 72.7564 156.25 75.4856 187.5 74.9274C218.75 74.4311 250 70.7096 281.25 67.9184C312.5 65.1273 343.75 63.2665 359.375 62.3361L375 61.4057V0H359.375C343.75 0 312.5 0 281.25 0C250 0 218.75 0 187.5 0C156.25 0 125 0 93.75 0C62.5 0 31.25 0 15.625 0H0V56.4436Z" fill="#BDEDE0"/>
+        <svg class="bottom-wave-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 75" fill="none">
+            <path class="bottom-wave" d="M0 56.4436L15.625 58.7386C31.25 60.9715 62.5 65.5614 93.75 69.1589C125 72.7564 156.25 75.4856 187.5 74.9274C218.75 74.4311 250 70.7096 281.25 67.9184C312.5 65.1273 343.75 63.2665 359.375 62.3361L375 61.4057V0H359.375C343.75 0 312.5 0 281.25 0C250 0 218.75 0 187.5 0C156.25 0 125 0 93.75 0C62.5 0 31.25 0 15.625 0H0V56.4436Z" fill="#BDEDE0"/>
         </svg>
     </section>
+    <!--My Work section-->
     <section class="section-dark">
         <!--Content-->
-        <main class="section-dark-content">
+        <div class="section-dark-content">
             <h2 class="section-heading">My Work</h2>
             <div class="text-image">
-                <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="section-text">I've been spending my time programming since 2018. At that time I came across my first programming language which is C#. In the third year of high school, I started studying game development and continued to use C# in Unity engine. After high school I caught interest in web apis.
+                If you want to check some of my work, you are more than welcome to.</p>
             </div>
-        </main>
+            <a class="arrow-button" href="projects.html">
+                <span>
+                    Details
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path class="section-dark-path" d="M14.5 5L21.5 12M21.5 12L14.5 19M21.5 12H3.5"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
         <!--Bottom wave-->
     </section>
+    <!--Gallery-->
+    <section class="section-bright">
+        <!--Top wave-->
+        <svg class="top-wave-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 50" fill="none">
+            <title>waveform top</title>
+            <path class="top-wave" d="M0 16.0524L15.625 18.1205C31.25 20.2276 62.5 24.3637 93.75 21.7884C125 19.174 156.25 9.80917 187.5 4.81458C218.75 -0.219034 250 -0.843363 281.25 0.834507C312.5 2.51238 343.75 6.57048 359.375 8.56051L375 10.5896V50H359.375C343.75 50 312.5 50 281.25 50C250 50 218.75 50 187.5 50C156.25 50 125 50 93.75 50C62.5 50 31.25 50 15.625 50H0V16.0524Z" fill="#BDEDE0"/>
+        </svg>
+        <!--Content-->
+        <div class="section-bright-content">
+            <h2 class="section-heading">Gallery</h2>
+            <div class="text-image">
+                <img class="section-image" src="pictures/matrixVildaEditCrop-min.png" alt="Vilém Charwot - Matrix">
+            </div>
+            <a class="arrow-button" href="projects.html">
+                <span>
+                    Photos
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path d="M14.5 5L21.5 12M21.5 12L14.5 19M21.5 12H3.5" stroke="#202A32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <!--Bottom wave-->
+        <svg class="bottom-wave-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 75" fill="none">
+            <path class="bottom-wave" d="M0 56.4436L15.625 58.7386C31.25 60.9715 62.5 65.5614 93.75 69.1589C125 72.7564 156.25 75.4856 187.5 74.9274C218.75 74.4311 250 70.7096 281.25 67.9184C312.5 65.1273 343.75 63.2665 359.375 62.3361L375 61.4057V0H359.375C343.75 0 312.5 0 281.25 0C250 0 218.75 0 187.5 0C156.25 0 125 0 93.75 0C62.5 0 31.25 0 15.625 0H0V56.4436Z" fill="#BDEDE0"/>
+        </svg>
+    </section>
+    <!--Footer-->
+    <footer class="section-dark">
+        <!--Content-->
+        <div class="section-dark-content">
+            <!--<h2 class="section-heading">My Work</h2>-->
+            <div class="text-image">
+                <p class="section-text copyright">Vilém Charwot © 2023</p>
+            </div>
+        </div>
+    </footer>
 </div>
 <script src="main.js"></script>
 </body>
