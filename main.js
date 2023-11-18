@@ -3,10 +3,17 @@ function menuRoll(){
     const disp = menu.style.display;
     if (disp === "none"){
         menu.style.display = "flex";
-        //menu.style.transition = "display 0.5s ease 0";
     }
     else {
         menu.style.display = "none";
-        //menu.style.transition = "display 0.5s ease 0";
+    }
+}
+window.onresize = (event)=>{
+    const menu = document.getElementById("nav-menu");
+    if (window.innerWidth > 900){
+        menu.style.display = "flex";
+    }
+    else{
+        menu.style.display = "none";
     }
 }
