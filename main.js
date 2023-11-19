@@ -1,3 +1,5 @@
+
+document.getElementById("nav-menu").style.maxHeight = '0';
 function menuRoll(){
     const menu = document.getElementById("nav-menu");
     const burger = document.getElementById("burger-icon");
@@ -9,9 +11,8 @@ function menuRoll(){
 
     }
     else{
-        menu.style.maxHeight = "148px";
+        menu.style.maxHeight = "0";
         burger.style.display = "none";
         cross.style.display = "flex";
     }
-
 }

@@ -73,7 +73,7 @@ a.name:hover{
         justify-self: stretch;
         gap: 1rem;
         align-items: center;
-        max-height: 0;
+        max-height: 148px;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
     }
