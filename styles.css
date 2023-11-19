@@ -226,12 +226,30 @@ a.name:hover{
         text-align: center;
     }
 
+    .outer-items-wrapper{
+        display: flex;
+        align-self: stretch;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .inner-items-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .list-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .list-with-heading{
         align-self: stretch;
         font-size: 1rem;
         font-weight: 400;
         align-items: start;
         color: inherit;
+
     }
     .list-heading{
         font-weight: 700;
@@ -409,12 +427,33 @@ a.name:hover{
     }
 
     .list-with-heading{
-        align-self: start;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
         font-size: 1.25rem;
         font-weight: 400;
-        align-items: start;
+        align-items: center;
+        justify-content: center;
         color: inherit;
+
     }
+    .outer-items-wrapper{
+        display: flex;
+        align-self: stretch;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inner-items-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .list-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .list-heading{
         font-weight: 700;
         text-decoration: none;
