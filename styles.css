@@ -3,6 +3,7 @@
 :root{
     --main-dark: #202A32;
     --main-bright: #BDEDE0;
+    font-size: 16px;
 }
 *{
     font-family: "Poppins", sans-serif;
@@ -43,10 +44,10 @@ a.name:hover{
 
     .top-page-header-container{
         display: flex;
-        padding: 16px;
+        padding: 1rem;
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+        gap: 1rem;
         align-self: stretch;
     }
     .top-page-header{
@@ -61,7 +62,7 @@ a.name:hover{
         align-items: center;
     }
     .name{
-        font-size: 20px;
+        font-size: 1.25rem;
         color: var(--main-bright);
         font-weight: 700;
         line-height: 150%;
@@ -70,7 +71,7 @@ a.name:hover{
         display: flex;
         flex-direction: column;
         justify-self: stretch;
-        gap: 16px;
+        gap: 1rem;
         align-items: center;
         max-height: 0;
         overflow: hidden;
@@ -106,7 +107,7 @@ a.name:hover{
 
     .intro-section{
         display: flex;
-        padding:32px 16px;
+        padding:2rem 1rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -115,13 +116,13 @@ a.name:hover{
         color: var(--main-bright);
     }
     .intro-heading{
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: 900;
         /*line-height: 150%;*/
     }
     .intro-text{
         font-weight: 700;
-        font-size: 16px;
+        font-size: 1rem;
         text-align: justify;
     }
 
@@ -143,17 +144,18 @@ a.name:hover{
     }
     .section-bright-content{
         display: flex;
-        padding: 0 16px;
+        padding: 0 1rem;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
+        gap: 0.5rem;
         align-self: stretch;
         text-align: justify;
         background-color: var(--main-bright);
+        color: var(--main-dark);
 
     }
     .section-heading{
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
     }
     .text-image{
@@ -162,9 +164,18 @@ a.name:hover{
         flex-direction: column;
         justify-content: center;
     }
+    .flipped-text-image{
+        flex-direction: column-reverse;
+    }
+
     .section-text{
         align-self: stretch;
-        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .section-list{
+        text-align: start;
+        font-size: 1rem;
         font-weight: 400;
     }
     .section-image{
@@ -173,8 +184,8 @@ a.name:hover{
     .arrow-button{
         display: flex;
         align-items: center;
-        gap: 8px;
-        font-size: 16px;
+        gap: 0.5rem;
+        font-size: 1rem;
         font-weight: 700;
         text-decoration: none;
         color: inherit;
@@ -193,17 +204,17 @@ a.name:hover{
     }
     .section-dark{
         display: flex;
-        padding: 16px 0;
+        padding: 1rem 0;
         flex-direction: column;
         align-items: center;
         align-self: stretch;
     }
     .section-dark-content{
         display: flex;
-        padding: 16px;
+        padding: 1rem;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
+        gap: 0.5rem;
         align-self: stretch;
         text-align: justify;
         color: var(--main-bright);
@@ -214,13 +225,42 @@ a.name:hover{
     .copyright{
         text-align: center;
     }
+
+    .list-with-heading{
+        align-self: stretch;
+        font-size: 1rem;
+        font-weight: 400;
+        align-items: start;
+        color: inherit;
+    }
+    .list-heading{
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+    }
+    .list-heading:visited{
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--main-dark);
+    }
+    .list-heading:active{
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+    }
+    .level1{
+        margin-left: -1rem;
+    }
+    .level2{
+        margin-left: 2rem;
+    }
 }
 @media screen and (min-width: 801px){
     .top-page-header-container{
         display: flex;
         justify-content: space-between;
-        padding: 16px;
-        font-size: 24px;
+        padding: 1rem;
+        font-size: 1.5rem;
         font-weight: 700;
     }
     .burger-menu{
@@ -228,10 +268,10 @@ a.name:hover{
     }
     #nav-menu{
         display: flex;
-        gap: 16px;
+        gap: 1rem;
     }
     .nav-item{
-        font-size: 20px;
+        font-size: 1.25rem;
         text-decoration: none;
         font-weight: 400;
         color: inherit;
@@ -251,15 +291,15 @@ a.name:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 16px;
+        gap: 1rem;
         padding: 80px 192px;
         align-self: stretch;
-        font-size: 32px;
+        font-size: 2rem;
     }
     .intro-heading{
         max-width: 900px;
         justify-self: stretch;
-        font-size: 64px;
+        font-size: 4rem;
     }
     .intro-text{
         max-width: 900px;
@@ -279,11 +319,11 @@ a.name:hover{
 
     .section-bright-content{
         display: flex;
-        padding: 0 16px;
+        padding: 0 1rem;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 16px;
+        gap: 1rem;
         align-self: stretch;
         background-color: var(--main-bright);
         color: var(--main-dark);
@@ -291,19 +331,25 @@ a.name:hover{
     .section-heading{
         color: inherit;
         max-width: 900px;
+        font-size: 1.5rem;
     }
     .text-image{
         display: flex;
         flex-direction: row;
         max-width: 900px;
         align-items: flex-start;
-        gap: 16px;
+        gap: 1.25rem;
         align-self: stretch;
         margin: auto;
     }
     .section-text{
-        font-size: 20px;
+        font-size: 1.25rem;
         text-align: justify;
+    }
+    .section-list{
+        text-align: start;
+        font-size: 1.25rem;
+        font-weight: 400;
     }
     .section-image{
         max-height: 418px;
@@ -312,8 +358,8 @@ a.name:hover{
         color: inherit;
         display: flex;
         align-items: center;
-        gap: 8px;
-        font-size: 24px;
+        gap: 0.5rem;
+        font-size: 1.5rem;
         font-weight: 700;
         text-decoration: none;
     }
@@ -321,8 +367,8 @@ a.name:hover{
         color: inherit;
         display: flex;
         align-items: center;
-        gap: 8px;
-        font-size: 24px;
+        gap: 0.5rem;
+        font-size: 1.5rem;
         font-weight: 700;
         text-decoration: none;
     }
@@ -330,8 +376,8 @@ a.name:hover{
         color: inherit;
         display: flex;
         align-items: center;
-        gap: 8px;
-        font-size: 24px;
+        gap: 0.5rem;
+        font-size: 1.5rem;
         font-weight: 700;
         text-decoration: underline;
     }
@@ -339,17 +385,17 @@ a.name:hover{
         color: inherit;
         display: flex;
         align-items: center;
-        gap: 8px;
-        font-size: 24px;
+        gap: 0.5rem;
+        font-size: 1.5rem;
         font-weight: 700;
         text-decoration: none;
     }
     .section-dark{
         display: flex;
-        padding: 16px;
+        padding: 1rem;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
+        gap: 0.5rem;
         align-self: stretch;
         stroke: var(--main-bright);
     }
@@ -359,6 +405,38 @@ a.name:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        color: var(--main-bright);
+    }
+
+    .list-with-heading{
+        align-self: start;
+        font-size: 1.25rem;
+        font-weight: 400;
+        align-items: start;
+        color: inherit;
+    }
+    .list-heading{
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.25rem;
+
+    }
+    .list-heading:visited{
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+    }
+    .list-heading:active{
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+    }
+    .level1{
+        margin-left: -1rem;
+    }
+    .level2{
+        margin-left: 2rem;
     }
 
 }
